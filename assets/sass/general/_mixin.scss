@@ -1,0 +1,16 @@
+@mixin custom-font($fontsize, $fontweight) {
+    font-weight: $fontweight;
+    font-size: $fontsize;
+}
+
+@mixin transition($time, $type, $property) {
+    transition: $time $type $property;
+    -moz-transition: $time $type $property;
+    -webkit-transition: $time $type $property;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
