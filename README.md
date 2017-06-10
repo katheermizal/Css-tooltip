@@ -1,4 +1,4 @@
-# Basig jQuery Responsive Menu
+# CSS Tooltips
 
 [![Basic Responsive Menu](http://katheermizal.info/blog/wp-content/uploads/2017/06/Css-Tooltips-720x340.png)](http://katheermizal.info/blog/?p=1)
 
@@ -25,11 +25,11 @@ Tooltip direction classes are:
 
 #### View Live Demo
 
-![Click Here](http://katheermizal.info/works/css-tooltips/index.php)
+[Click Here](http://katheermizal.info/works/css-tooltips/index.php)
 
 ##### Working Demo on
 
-![Code Pen](https://codepen.io/katheer/pen/weMLYr)
+[Code Pen](https://codepen.io/katheer/pen/weMLYr)
 
 ***
 ## END...
