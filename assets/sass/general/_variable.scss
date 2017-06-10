@@ -11,9 +11,9 @@ $fw-500: 500;
 $fw-600: 600;
 //
 // Font Size
-$fs-default: 16px;
 $fs-small: 12px;
-$fs-regular: 16px;
+$fs-medium: 14px;
+$fs-default: 16px;
 $fs-large: 18px;
 $fs-extra-large: 24px;
 //
@@ -24,18 +24,21 @@ $fs-extra-large: 24px;
 $white: #fff;
 $black: #000;
 $gray: #333;
+$puple: #b95ed5;
 //
 // Text Colors
-$font-white: #fff;
-$font-black: #000;
-$font-gray: #333;
+$font-white: $white;
+$font-black: $black;
+$font-gray: $gray;
+$font-puple: $puple;
 //
 // Background Colors
-$background-white: #fff;
-$background-black: #000;
-$background-gray: #333;
+$background-white: $white;
+$background-black: $black;
+$background-gray: $gray;
+$background-puple: $puple;
 //
 // Border Colors
-$border-white: #fff;
-$border-black: #000;
-$border-gray: #333;
+$border-white: $white;
+$border-black: $black;
+$border-gray: $gray;

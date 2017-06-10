@@ -37,6 +37,43 @@ a {
 /*======================
  Common Style 
 ========================*/
+a.back-to-article {
+  width: 100%;
+  float: left;
+  padding: 10px 0px;
+  margin-bottom: 30px;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  text-indent: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none; }
+  a.back-to-article.back-to-article:hover {
+    color: #b95ed5; }
+
+a.github {
+  width: 150px;
+  right: -32px;
+  top: 27px;
+  position: fixed;
+  padding: 5px 0 8px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #b95ed5;
+  text-transform: capitalize;
+  text-align: center;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 111;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  a.github:hover {
+    background-color: #fff;
+    color: #b95ed5; }
+
 main {
   padding: 30px 0;
   background-color: #fff; }
@@ -47,7 +84,7 @@ main {
     text-align: center;
     text-transform: uppercase; }
   main p {
-    max-width: 600px;
+    max-width: 700px;
     margin: 5px auto 0;
     text-align: center; }
   main section {
@@ -95,6 +132,18 @@ main {
           background-color: #fff;
           color: #333; }
 
+/*---- View < 1024px ----*/
+@media (max-width: 1024px) {
+  main section li {
+    width: 50%; }
+    main section li:nth-child(4n+1) {
+      clear: none; }
+    main section li:nth-child(2n+1) {
+      clear: left; } }
+/*---- View < 450px ----*/
+@media (max-width: 450px) {
+  main section li {
+    width: 100%; } }
 /*======================
  Tooltip style
 ========================*/
@@ -106,9 +155,9 @@ main {
   content: ""; }
 .link:after {
   content: attr(data-tooltip);
-  width: auto;
+  width: 120px;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 0;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -294,7 +343,6 @@ main {
 
 /*---- tooltip-10 style ----*/
 .tooltip-10:after {
-  width: 120px;
   right: calc(100% + 5px);
   transform-origin: center left;
   -webkit-transform-origin: center left; }
@@ -303,7 +351,6 @@ main {
 
 /*---- tooltip-11 style ----*/
 .tooltip-11:after {
-  width: 120px;
   left: calc(100% + 5px);
   transform-origin: center right;
   -webkit-transform-origin: center right; }
@@ -494,7 +541,7 @@ main {
   ------------------------------*/
 @keyframes ring {
   0%,
-    100% {
+        100% {
     transform: rotate(0deg); }
   5% {
     transform: rotate(-30deg); }
@@ -516,7 +563,7 @@ main {
     transform: rotate(0deg); } }
 @-webkit-keyframes ring {
   0%,
-    100% {
+        100% {
     transform: rotate(0deg); }
   5% {
     transform: rotate(-30deg); }
@@ -538,7 +585,7 @@ main {
     transform: rotate(0deg); } }
 @-moz-keyframes ring {
   0%,
-    100% {
+        100% {
     transform: rotate(0deg); }
   5% {
     transform: rotate(-30deg); }

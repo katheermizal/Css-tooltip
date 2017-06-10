@@ -14,13 +14,13 @@
     }
     &:after {
         content: attr(data-tooltip);
-        width: auto;
+        width: 120px;
         display: block;
-        padding: 10px 15px;
+        padding: 10px 0;
         @include border-radius(4px);
         background-color: $background-black;
         color: $font-white;
-        @include custom-font(12px, 400);
+        @include custom-font($fs-small, $fw-400);
         text-align: center;
         text-transform: none;
     }
@@ -241,7 +241,6 @@
 
 .tooltip-10 {
     &:after {
-        width: 120px;
         right: calc(100% + 5px);
         transform-origin: center left;
         -webkit-transform-origin: center left;
@@ -258,7 +257,6 @@
 
 .tooltip-11 {
     &:after {
-        width: 120px;
         left: calc(100% + 5px);
         transform-origin: center right;
         -webkit-transform-origin: center right;
@@ -291,51 +289,7 @@
   tooltip-13 and tooltip-14 styles
   ------------------------------*/
 
-@keyframes vibrate {
-    0% {
-        transform: rotateZ(10deg)
-    }
-    50% {
-        transform: rotateZ(-10deg)
-    }
-    75% {
-        transform: rotateZ(10deg)
-    }
-    100% {
-        transform: rotateZ(-10deg)
-    }
-}
-
-@-webkit-keyframes vibrate {
-    0% {
-        transform: rotateZ(10deg)
-    }
-    50% {
-        transform: rotateZ(-10deg)
-    }
-    75% {
-        transform: rotateZ(10deg)
-    }
-    100% {
-        transform: rotateZ(-10deg)
-    }
-}
-
-@-moz-keyframes vibrate {
-    0% {
-        transform: rotateZ(10deg)
-    }
-    50% {
-        transform: rotateZ(-10deg)
-    }
-    75% {
-        transform: rotateZ(10deg)
-    }
-    100% {
-        transform: rotateZ(-10deg)
-    }
-}
-
+@include vibrate();
 .tooltip-13,
 .tooltip-14 {
     &:after,
@@ -370,42 +324,7 @@
   tooltip-15 style
   ------------------------------*/
 
-@keyframes jump-up {
-    0% {
-        transform: translateY(0px)
-    }
-    50% {
-        transform: translateY(-20px)
-    }
-    100% {
-        transform: translateY(0px)
-    }
-}
-
-@-webkit-keyframes jump-up {
-    0% {
-        transform: translateY(0px)
-    }
-    50% {
-        transform: translateY(-20px)
-    }
-    100% {
-        transform: translateY(0px)
-    }
-}
-
-@-moz-keyframes jump-up {
-    0% {
-        transform: translateY(0px)
-    }
-    50% {
-        transform: translateY(-20px)
-    }
-    100% {
-        transform: translateY(0px)
-    }
-}
-
+@include jump-up-keyframe();
 .tooltip-15 {
     &:after,
     &:before {
@@ -440,42 +359,7 @@
   tooltip-16 style
   ------------------------------*/
 
-@keyframes jump-down {
-    0% {
-        transform: translateY(0px)
-    }
-    50% {
-        transform: translateY(20px)
-    }
-    100% {
-        transform: translateY(0px)
-    }
-}
-
-@-webkit-keyframes jump-down {
-    0% {
-        transform: translateY(0px)
-    }
-    50% {
-        transform: translateY(20px)
-    }
-    100% {
-        transform: translateY(0px)
-    }
-}
-
-@-moz-keyframes jump-down {
-    0% {
-        transform: translateY(0px)
-    }
-    50% {
-        transform: translateY(20px)
-    }
-    100% {
-        transform: translateY(0px)
-    }
-}
-
+@include jump-down-keyframe();
 .tooltip-16 {
     &:after,
     &:before {
@@ -534,108 +418,7 @@
   tooltip-19 and tooltip-20 styles
   ------------------------------*/
 
-@keyframes ring {
-    0%,
-    100% {
-        transform: rotate(0deg);
-    }
-    5% {
-        transform: rotate(-30deg);
-    }
-    10% {
-        transform: rotate(25deg);
-    }
-    15% {
-        transform: rotate(-25deg);
-    }
-    20% {
-        transform: rotate(20deg);
-    }
-    25% {
-        transform: rotate(-20deg);
-    }
-    30% {
-        transform: rotate(15deg);
-    }
-    35% {
-        transform: rotate(-15deg);
-    }
-    40% {
-        transform: rotate(15deg);
-    }
-    45% {
-        transform: rotate(0deg);
-    }
-}
-
-@-webkit-keyframes ring {
-    0%,
-    100% {
-        transform: rotate(0deg);
-    }
-    5% {
-        transform: rotate(-30deg);
-    }
-    10% {
-        transform: rotate(25deg);
-    }
-    15% {
-        transform: rotate(-25deg);
-    }
-    20% {
-        transform: rotate(20deg);
-    }
-    25% {
-        transform: rotate(-20deg);
-    }
-    30% {
-        transform: rotate(15deg);
-    }
-    35% {
-        transform: rotate(-15deg);
-    }
-    40% {
-        transform: rotate(15deg);
-    }
-    45% {
-        transform: rotate(0deg);
-    }
-}
-
-@-moz-keyframes ring {
-    0%,
-    100% {
-        transform: rotate(0deg);
-    }
-    5% {
-        transform: rotate(-30deg);
-    }
-    10% {
-        transform: rotate(25deg);
-    }
-    15% {
-        transform: rotate(-25deg);
-    }
-    20% {
-        transform: rotate(20deg);
-    }
-    25% {
-        transform: rotate(-20deg);
-    }
-    30% {
-        transform: rotate(15deg);
-    }
-    35% {
-        transform: rotate(-15deg);
-    }
-    40% {
-        transform: rotate(15deg);
-    }
-    45% {
-        transform: rotate(0deg);
-    }
-}
-
+@include ring-keyframe();
 .tooltip-19,
 .tooltip-20 {
     &:after,

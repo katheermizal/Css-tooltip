@@ -48,18 +48,57 @@ a {
  Common Style 
 ========================*/
 
+a.back-to-article {
+    width: 100%;
+    float: left;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    background: $background-gray;
+    color: $font-white;
+    text-align: left;
+    text-indent: 20px;
+    font-size: $fs-small;
+    text-transform: uppercase;
+    text-decoration: none;
+    &.back-to-article:hover {
+        color: $font-puple;
+    }
+}
+
+a.github {
+    width: 150px;
+    right: -32px;
+    top: 27px;
+    position: fixed;
+    padding: 5px 0 8px;
+    color: $font-white;
+    @include custom-font($fs-medium,
+    $fw-500);
+    background-color: $background-puple;
+    text-transform: capitalize;
+    text-align: center;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 111;
+    @include box-shadow(1px 1px 1px 1px rgba(0, 0, 0, 0.5));
+    &:hover {
+        background-color: $background-white;
+        color: $font-puple;
+    }
+}
+
 main {
     padding: 30px 0;
     background-color: $background-white;
     h1 {
         color: $font-gray;
-        @include custom-font(24px,
-        600);
+        @include custom-font($fs-extra-large,
+        $fw-600);
         text-align: center;
         text-transform: uppercase;
     }
     p {
-        max-width: 600px;
+        max-width: 700px;
         margin: 5px auto 0;
         text-align: center;
     }
@@ -103,8 +142,8 @@ main {
                 text-align: center;
                 text-transform: uppercase;
                 color: $font-white;
-                @include custom-font(14px,
-                400);
+                @include custom-font($fs-medium,
+                $fw-400);
                 @include transition(0.5s,
                 ease,
                 background-color);
@@ -114,5 +153,29 @@ main {
                 }
             }
         }
+    }
+}
+
+
+/*---- View < 1024px ----*/
+
+@media(max-width:1024px) {
+    main section li {
+        width: 50%;
+        &:nth-child(4n+1) {
+            clear: none;
+        }
+        &:nth-child(2n+1) {
+            clear: left;
+        }
+    }
+}
+
+
+/*---- View < 450px ----*/
+
+@media(max-width:450px) {
+    main section li {
+        width: 100%;
     }
 }
