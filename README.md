@@ -23,11 +23,11 @@ Tooltip direction classes are:
  3) left
  4) right
 
-#### View Live Demo
+#### View live demo
 
 [Click Here](http://katheermizal.info/works/css-tooltips/index.php)
 
-##### Working Demo on
+#### Another working demo on
 
 [Code Pen](https://codepen.io/katheer/pen/weMLYr)
 
